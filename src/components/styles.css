@@ -1,0 +1,160 @@
+.logo {
+  width: 100px;
+}
+
+.liven-rewards {
+  background: #faf9f7;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.headings {
+  width: 400px;
+}
+.headings h1 {
+  color: #000;
+}
+.headings p {
+  color: #3c3939;
+  font-size: 18px;
+}
+
+.gift-toggle-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  padding: 15px;
+  width: 300px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.gift-toggle-content {
+  display: flex;
+  align-items: center;
+}
+
+.gift-icon {
+  font-size: 24px;
+  color: #f45b69;
+  margin-right: 10px;
+}
+
+.gift-text {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Toggle Switch Styling */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.purchase-gift-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #3c3939;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 4px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #f45b69;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/* Rounded Slider (Optional) */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.get-app-btn {
+  background-color: #f45b69;
+  color: white;
+  border: none;
+  padding: 5px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.gift-toggle {
+  margin: 20px 0;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px;
+}
+
+.card {
+  background-color: white;
+  padding: 0px 20px;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+.card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gift-mode .card {
+  background-color: #e0f7fa; /* Change background when gift mode is enabled */
+}
+
+.gift-icon {
+  font-size: 24px;
+  color: #ff3c6e; /* Example color for the icon */
+}
+
+.bit-icon {
+  color: rgb(237, 235, 101);
+}
